@@ -1,3 +1,4 @@
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 # TensorFlow 实现 Softmax Regression 识别手写体
 ## 1 MNIST 数据集
 MNIST(Mixed National Institute of Standards and Technology database) 由几万张 28&times;28 像素的手写数字组成，这些图片只包含灰度值信息。MNIST 数据集样张如下：
