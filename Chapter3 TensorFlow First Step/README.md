@@ -1,4 +1,3 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 # TensorFlow 实现 Softmax Regression 识别手写体
 ## 1 MNIST 数据集
 MNIST(Mixed National Institute of Standards and Technology database) 由几万张 28&times;28 像素的手写数字组成，这些图片只包含灰度值信息。MNIST 数据集样张如下：
@@ -124,7 +123,7 @@ $$
 3. 迭代地对数据进行训练。
 4. 在测试集上对准确率进行评测。
 
-##5 使用 iris 数据集练习
+## 5 使用 iris 数据集练习
 Iris数据集是常用的分类实验数据集，由Fisher, 1936收集整理。Iris也称鸢尾花卉数据集，是一类多重变量分析的数据集。数据集包含150个数据集，分为3类，每类50个数据，每个数据包含4个属性。可通过花萼长度，花萼宽度，花瓣长度，花瓣宽度4个属性预测鸢尾花卉属于（Setosa，Versicolour，Virginica）三个种类中的哪一类。
 
 |Sepal.Length(花萼长度)|Sepal.Width(花萼宽度)|Petal.Length(花瓣长度)|Petal.Width(花瓣宽度)|Class(种类)|
