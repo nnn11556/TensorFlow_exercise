@@ -20,9 +20,18 @@ One-Hot 编码是分类变量作为二进制向量的表示。这首先要求将
 
 当然，当特征类别较多时，数据经过独热编码可能会变得过于稀疏。
 ## 3 Softmax Regression 和训练过程
-**softmax 回归用于多分类问题，它会对每一种类别估算一个概率，最后取概率最大的那个作为输出的结果。**模型具有 k 组参数，\\(\theta_1,\theta_2,...\theta_k \\)，其中\\(\theta_i = [\theta_i^{0},\theta_i^{1},...,\theta_i^{n}]^{T}\\)
+**softmax 回归用于多分类问题，它会对每一种类别估算一个概率，最后取概率最大的那个作为输出的结果。**模型具有 k 组参数，
 
-softmax 回归假定给定样本\\(x^{(i)}\\)，样本属于类别 k 的概率 \\(P(y^{(i)}=k|x^{(i)},\theta)=\displaystyle\frac{e^{\theta_k^{T}x^{(i)}}}{\sum_{j=1}^ne^{\theta_j^{T}x^{(i)}}}\\),写成矩阵形式为：
+$$
+(\theta_1,\theta_2,...\theta_k \)
+$$，
+
+其中
+
+$$
+\theta_i = [\theta_i^{0},\theta_i^{1},...,\theta_i^{n}]^{T}
+$$
+softmax 回归假定给定样本$x^{(i)}$，样本属于类别 k 的概率 \\(P(y^{(i)}=k|x^{(i)},\theta)=\displaystyle\frac{e^{\theta_k^{T}x^{(i)}}}{\sum_{j=1}^ne^{\theta_j^{T}x^{(i)}}}\\),写成矩阵形式为：
 
 $$
 \begin{equation}
