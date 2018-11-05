@@ -29,9 +29,9 @@ $$
 \begin{equation}
 \left[
  \begin{matrix}
-   P(y^{(i)}=1|x^{(i)},\theta)\\
-   P(y^{(i)}=2|x^{(i)},\theta)\\
-   \vdots\\
+   P(y^{(i)}=1|x^{(i)},\theta)\\\\
+   P(y^{(i)}=2|x^{(i)},\theta)\\\\
+   \vdots\\\\
    P(y^{(i)}=k|x^{(i)},\theta)
   \end{matrix} 
 \right]
