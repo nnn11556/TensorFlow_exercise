@@ -8,6 +8,7 @@ MNIST(Mixed National Institute of Standards and Technology database) 由几万�
    style="margin-top:30px">
 </div>
 其中空白部分为 0，有笔记的地方根据颜色深浅为 0~1 之间的取值。
+
 ## 2 独热码 (One-Hot Code)
 One-Hot 编码，又称为一位有效编码，主要是采用 N 位状态寄存器来对N个状态进行编码，每个状态都由他独立的寄存器位，并且在任意时候只有一位有效。
 
@@ -19,6 +20,7 @@ One-Hot 编码是分类变量作为二进制向量的表示。这首先要求将
 - 在一定程度上也扩充了特征。比如性别本身是一个特征，经过one hot 编码以后，就变成了男或女两个特征。
 
 当然，当特征类别较多时，数据经过独热编码可能会变得过于稀疏。
+
 ## 3 Softmax Regression 和训练过程
 **softmax 回归用于多分类问题，它会对每一种类别估算一个概率，最后取概率最大的那个作为输出的结果**。模型具有 k 组参数，$(\theta_1,\theta_2,...\theta_k \)$,其中$\theta_i = [\theta_i^{0},\theta_i^{1},...,\theta_i^{n}]^{T}$
 softmax 回归假定给定样本$x^{(i)}$，样本属于类别 k 的概率$P(y^{(i)}=k|x^{(i)},\theta)=\displaystyle\frac{e^{\theta_k^{T}x^{(i)}}}{\sum_{j=1}^ne^{\theta_j^{T}x^{(i)}}}$,写成矩阵形式为：
@@ -27,9 +29,9 @@ $$
 \begin{equation}
 \left[
  \begin{matrix}
-   P(y^{(i)}=1|x^{(i)},\theta)\\\
-   P(y^{(i)}=2|x^{(i)},\theta)\\\
-   \vdots\\\
+   P(y^{(i)}=1|x^{(i)},\theta)\\
+   P(y^{(i)}=2|x^{(i)},\theta)\\
+   \vdots\\
    P(y^{(i)}=k|x^{(i)},\theta)
   \end{matrix} 
 \right]
